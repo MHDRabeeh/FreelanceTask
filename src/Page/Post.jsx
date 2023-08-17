@@ -9,7 +9,7 @@ const Post = () => {
     const text = 'A university student is an individual enrolled in higher education pursuing a diverse range of academic, personal, and professional growth. This phase of education signifies a transition into specialized fields of study, fostering critical thinking, research skills, and independence.'
     return (
         <div className='w-full h-[96vh] overflow-auto'>
-            <div className='w-[60%] mx-auto h-[90rem] bg-slate-100 pt-10 '>
+            <div className='w-[60%] mx-auto h-[90rem] bg-slate-100 pt-10 mt-3 '>
                 <div className='w-[90%] h-[85rem] mx-auto    bg-white  '>
                     <div className=' w-[95%] mx-auto flex justify-start items-center '>
                         <div> <img src={image1} className='w-16 h-16' alt="" /></div>
