@@ -4,13 +4,18 @@ import image2 from '../assets/student.jpeg'
 import image3 from '../assets/avatar3.png'
 import { MdMoreHoriz } from 'react-icons/md'
 import { PiArrowBendDownRightBold } from 'react-icons/pi'
+import photo1 from '../assets/photo1.jpeg';
+import photo2 from '../assets/photo2.jpeg';
+import photo3 from '../assets/photo3.jpeg';
+import photo4 from '../assets/photo4.jpeg'
+import photo5 from '../assets/photo5.jpeg'
 
 const Post = () => {
     const text = 'A university student is an individual enrolled in higher education pursuing a diverse range of academic, personal, and professional growth. This phase of education signifies a transition into specialized fields of study, fostering critical thinking, research skills, and independence.'
     return (
         <div className='w-full h-[96vh] overflow-auto'>
-            <div className='w-[60%] mx-auto h-[90rem] bg-slate-100 pt-10 mt-3 '>
-                <div className='w-[90%] h-[85rem] mx-auto    bg-white  '>
+            <div className='w-[60%] mx-auto h-[120rem] bg-slate-100 pt-10 mt-3 '>
+                <div className='w-[90%] h-[115rem] mx-auto    bg-white  '>
                     <div className=' w-[95%] mx-auto flex justify-start items-center '>
                         <div> <img src={image1} className='w-16 h-16' alt="" /></div>
                         <div>
@@ -96,6 +101,85 @@ const Post = () => {
                         </div>
                         <span className='text-gray-500 text-xs font-bold'>Add Comment </span>
 
+
+                        <div className='mt-5 bg-[#dbeafe] flex flex-col gap-3 p-3'>
+                            <div className='flex gap-3 items-center'>
+                                <div>
+                                    <img src={photo2} className='w-12 h-12 rounded-3xl' alt="" />
+                                </div>
+                                <div>
+                                    <p className='text-sm font-medium text-gray-500 '>Edumpus <span className='text-xs font-medium text-gray-400 '>Comment on your post</span></p>
+                                    <p className='text-xs text-gray-400 font-medium'>Now</p>
+
+                                </div>
+                            </div>
+                            <div className='flex gap-3 items-center'>
+                                <div>
+                                    <img src={photo1} className='w-12 h-12  rounded-3xl' alt="" />
+                                </div>
+                                <div>
+                                    <p className='text-sm font-medium text-gray-500 '>Ali <span className='text-xs font-medium text-gray-400 '>Applied developer post</span></p>
+                                    <p className='text-xs text-gray-400 font-medium'>2 min</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        {/* <div>
+                            <div className='flex gap-3 items-center'>
+                                <div>
+                                    <img src={photo1} className='w-12 h-12 rounded-3xl' alt="" />
+                                </div>
+                                <div>
+                                    <p className='text-sm font-medium text-gray-500 '>Edumpus <span className='text-xs font-medium text-gray-400 '>Comment on your post</span></p>
+                                    <p className='text-xs text-gray-400 font-medium'>Now</p>
+
+                                </div>
+                            </div>
+                            <div className='flex gap-3 items-center'>
+                                <div>
+                                    <img src={photo3} className='w-12 h-12  rounded-3xl' alt="" />
+                                </div>
+                                <div>
+                                    <p className='text-sm font-medium text-gray-500 '>Ali <span className='text-xs font-medium text-gray-400 '>Comment on your post</span></p>
+                                    <p className='text-xs text-gray-400 font-medium'>2 min</p>
+
+                                </div>
+                            </div>
+
+                        </div> */}
+
+                        <div className='  flex flex-col gap-3 p-3'>
+                            <div className='flex gap-3 items-center'>
+                                <div>
+                                    <img src={photo3} className='w-12 h-12 rounded-3xl' alt="" />
+                                </div>
+                                <div>
+                                    <p className='text-sm font-medium text-gray-500 '>Jennifer Lopz <span className='text-xs font-medium text-gray-400 '>Applied scince and technology degree </span></p>
+                                    <p className='text-xs text-gray-400 font-medium'>1hr ago</p>
+
+                                </div>
+                            </div>
+                            <div className='flex gap-3 items-center'>
+                                <div>
+                                    <img src={photo4} className='w-12 h-12  rounded-3xl' alt="" />
+                                </div>
+                                <div>
+                                    <p className='text-sm font-medium text-gray-500 '>john Due <span className='text-xs font-medium text-gray-400 '>Applied History</span></p>
+                                    <p className='text-xs text-gray-400 font-medium'>2 day's ago</p>
+
+                                </div>
+                            </div>
+                            <div className='flex gap-3 items-center'>
+                                <div>
+                                    <img src={photo5} className='w-12 h-12  rounded-3xl' alt="" />
+                                </div>
+                                <div>
+                                    <p className='text-sm font-medium text-gray-500 '>Danny Denne <span className='text-xs font-medium text-gray-400 '>applied law and history</span></p>
+                                    <p className='text-xs text-gray-400 font-medium'>1 day's ago</p>
+
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
