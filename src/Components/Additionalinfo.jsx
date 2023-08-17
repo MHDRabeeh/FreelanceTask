@@ -2,8 +2,10 @@ import React from 'react'
 import { GrFormAdd } from 'react-icons/gr'
 import { MdDelete } from 'react-icons/md'
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa'
+import { useNavigate } from 'react-router-dom'
 
 const Additionalinfo = () => {
+    const handlePage = useNavigate()
     return (
         <div className='w-[66%] h-[60rem]  mx-auto'>
             <p className='font-bold text-lg'>Additional Information</p>
@@ -131,10 +133,11 @@ const Additionalinfo = () => {
 
             <div className='mt-5 flex justify-end'>
                 <div className='flex gap-1'>
-                    <div className='px-2 p-1 border  border-[#2563eb] flex gap-1 justify-center items-center text-[#2563eb]'>  <span><FaArrowLeft /></span><span>Pre</span> </div>
-                    <div className='px-2 p-1 bg-[#2563eb] flex gap-1 justify-center items-center text-white'><span>Next</span> <span><FaArrowRight /></span> </div>
+                    <div className='px-2 p-1 border  border-[#2563eb] flex gap-1 justify-center items-center text-[#2563eb] cursor-pointer'>  <span><FaArrowLeft /></span><span>Pre</span> </div>
+                    <div onClick={()=>handlePage("/post")} className='px-2 p-1  cursor-pointer bg-[#2563eb] flex gap-1 justify-center items-center text-white'><span>Next</span> <span><FaArrowRight /></span> </div>
                 </div>
             </div>
+
 
         </div>
     )
